@@ -2,8 +2,12 @@ package com.bridge.shapeExample;
 
 public class Circle extends Shape{
 
+    public Circle(Color color) {
+        super(color);
+    }
+
     @Override
     public void applyColor() {
-        System.out.println("White color");
+        this.color.applyColor();
     }
 }
